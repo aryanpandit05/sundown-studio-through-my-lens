@@ -34,14 +34,41 @@ nav {
 }
 
 #nav2 h4 {
+  position: relative;
   border: 1px solid #8a8a8a89;
   border-radius: 50px;
   font-weight: 500;
   font-size: 18px;
   padding: 10px 20px;
+  /* transition: all ease 0.4s; */
+  overflow: hidden;
 }
 
 #nav2 h4 a {
   text-decoration: none;
   color: #000000bb;
+  position: relative;
+  z-index: 10;
+}
+
+#nav2 h4:hover a {
+  color: white;
+}
+
+#nav2 h4::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  left: 0;
+  bottom: -100%;
+  border-radius: 50%;
+  transition: all ease 0.4s;
+}
+
+#nav2 h4:hover::after {
+  content: "";
+  bottom: 0;
+  border-radius: 0;
 }
