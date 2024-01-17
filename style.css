@@ -14,8 +14,8 @@ body {
 }
 
 #page1 {
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  width: 100%;
   background-color: #efeae3;
   position: relative;
   padding: 0 2vw;
@@ -77,11 +77,11 @@ nav {
 .center {
   height: 65vh;
   width: 100%;
-  background-color: orange;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   border-bottom: 1px solid #0000003c;
+  padding: 2vw;
 }
 
 .left h4 {
@@ -90,5 +90,14 @@ nav {
   line-height: 2vw;
 }
 
-.right {
+.right h1 {
+  font-size: 9vw;
+  line-height: 7vw;
+  text-align: right;
+}
+
+#page1 video {
+  width: 100%;
+  margin-top: 4vw;
+  border-radius: 30px;
 }
