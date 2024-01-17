@@ -18,6 +18,7 @@ body {
   width: 100vw;
   background-color: #efeae3;
   position: relative;
+  padding: 0 2vw;
 }
 
 nav {
@@ -71,4 +72,23 @@ nav {
   content: "";
   bottom: 0;
   border-radius: 0;
+}
+
+.center {
+  height: 65vh;
+  width: 100%;
+  background-color: orange;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 1px solid #0000003c;
+}
+
+.left h4 {
+  width: 28vw;
+  font-size: 1.7vw;
+  line-height: 2vw;
+}
+
+.right {
 }
