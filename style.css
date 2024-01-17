@@ -100,4 +100,67 @@ nav {
   width: 100%;
   margin-top: 4vw;
   border-radius: 30px;
+  position: relative;
+}
+
+#heroshape {
+  position: absolute;
+  height: 30vw;
+  width: 45vw;
+  right: 0;
+  top: 72vh;
+}
+
+#hero1 {
+  height: 100%;
+  width: 100%;
+  background-color: #fe320a;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  filter: blur(20px);
+  position: absolute;
+}
+#hero2 {
+  height: 30vw;
+  width: 30vw;
+  background-color: #fe320a;
+  border-radius: 50%;
+  filter: blur(20px);
+  position: absolute;
+  animation-name: anime2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+#hero3 {
+  height: 30vw;
+  width: 30vw;
+  background-color: #fe320a;
+  border-radius: 50%;
+  filter: blur(20px);
+  position: absolute;
+  animation-name: anime1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+@keyframes anime1 {
+  from {
+    transform: translate(20%, -3%);
+  }
+  to {
+    transform: translate(-20%, 10%);
+  }
+}
+
+@keyframes anime2 {
+  from {
+    transform: translate(-5%, -10%);
+  }
+  to {
+    transform: translate(20%, 20%);
+  }
 }
