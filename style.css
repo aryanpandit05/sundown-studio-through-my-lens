@@ -164,3 +164,50 @@ nav {
     transform: translate(-20%, 20%);
   }
 }
+
+#page2 {
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 8vw;
+  background-color: #efeae3;
+}
+
+#movingtext {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+#movingtext::-webkit-scrollbar {
+  display: none;
+}
+
+.con {
+  display: inline-block;
+  animation-name: moving;
+  animation-timing-function: linear;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+#movingtext h1 {
+  font-size: 9vw;
+  display: inline-block;
+}
+
+.gola {
+  background-color: red;
+  margin: 1vw 2vw;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+@keyframes moving {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
