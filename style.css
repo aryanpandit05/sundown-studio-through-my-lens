@@ -166,7 +166,7 @@ nav {
 }
 
 #page2 {
-  min-height: 100vh;
+  min-height: 100vw;
   width: 100%;
   padding-top: 8vw;
   background-color: #efeae3;
@@ -187,6 +187,7 @@ nav {
   animation-timing-function: linear;
   animation-duration: 10s;
   animation-iteration-count: infinite;
+  animation-direction: normal;
 }
 
 #movingtext h1 {
@@ -210,4 +211,32 @@ nav {
   to {
     transform: translateX(-100%);
   }
+}
+
+#page2bottom {
+  height: 90vh;
+  width: 100%;
+  padding: 4.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#page2bottom h1 {
+  font-size: 4vw;
+  line-height: 4vw;
+  width: 67%;
+}
+#bottompart2 {
+  margin-top: 22vw;
+  width: 20%;
+}
+
+#bottompart2 img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+#bottompart2 p {
+  padding-top: 2vw;
+  font-size: 1vw;
 }
